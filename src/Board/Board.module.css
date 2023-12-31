@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 400px;
+  height: 400px;
+}
+
+.cell {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+}
+
+.rookTile {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.number {
+  font-size: 18px;
+  color: red;
+}
+
+.winnerStatement {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nonInteractiveTile {
+  opacity: 0.5;
+  pointer-events: none;
+}
